@@ -8,7 +8,7 @@ on: [push] # On every commits job will run
 jobs:
   build:
     # Specify the runner environment for this job. Commented options indicate alternatives.
-    runs-on: ubuntu-latest # Github hosted runner
+    runs-on: ubuntu-latest # Github hosted runner, runner image,it means that the job will be executed on a fresh Ubuntu Linux virtual machine, allowing you to define and run your tasks in a clean and isolated environment. This is a common choice for many workflows, especially those involving software builds and tests, as it provides a consistent and reliable environment for your actions.
     
     # Define a strategy matrix for running this job with different Python versions.
     strategy:
